@@ -1,3 +1,9 @@
+class ClassWithError:
+    def __init__(self):
+        self.message = 'Hi, Im a class with an error'
+        
+        return self.message
+
 def HadamardProduct(matrix_a, matrix_b):
     matrix_result = [[0 for col in range(len(matrix_a))] for row in range(len(matrix_a))]
 
