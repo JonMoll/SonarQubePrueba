@@ -1,9 +1,9 @@
 def HadamardProduct(matrix_a, matrix_b):
-    matrix_result = matrix_a
+    matrix_result = [[0 for col in range(len(matrix_a))] for row in range(len(matrix_a))]
 
     for i in range(len(matrix_a)):
-        for j in range(len(matrix_b)):
-            matrix_result[i][j] = matrix_a[i][j] * matrix_a[i][j]
+        for j in range(len(matrix_a)):
+            matrix_result[i][j] = matrix_a[i][j] * matrix_b[i][j]
     
     return matrix_result
 
